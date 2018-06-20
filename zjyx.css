@@ -1,0 +1,418 @@
+@charset "utf-8";
+
+/*初始化样式*/
+@import url("../base/reset.css");
+/*整站基础公用样式*/
+@import url("base.css");
+
+.bg_t {
+    background-color: #003366
+}
+
+.bg_color {
+    background-color: #e6e6e6
+}
+
+.f_left {
+    float: left
+}
+
+.f_right {
+    float: right
+}
+
+.img_bg {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    background-color: #333333;
+}
+
+/* for IE8 and earlier */
+.img_bg {
+    opacity: .5;
+    background-color: #333333
+}
+
+/* for IE9+ and other browsers */
+.a_r_r {
+
+}
+
+.a_r_r a {
+    color: #aa0000
+}
+
+.a_r_r a:hover {
+    color: #ff0000
+}
+
+.a_w_w a {
+    color: #FFFFFF;
+    background: #1b6dc0;
+    padding: 10px 20px;
+}
+
+.a_w_w a:hover {
+    color: #FFFFFF;
+}
+
+.c1 {
+    width: 1100px;
+    height: 240px;
+    margin: 15px auto
+}
+
+.c1 li {
+    width: 153px;
+    height: 240px;
+    margin-left: 4px
+}
+
+.c2 {
+    width: 1100px;
+    margin: 15px auto
+}
+
+.c2_t {
+    background-image: url(../../images/zjyx/c2_t.jpg);
+    width: 1100px;
+    height: 40px
+}
+
+.c2_c {
+    line-height: 28px;
+    text-indent: 28px;  background-color:#FFF;
+}
+
+.c3 {
+    width: 1100px;
+    height: 277px;
+    margin: 10px auto;
+}
+
+.c3_t {
+    margin-right: 200px;
+    height: 35px;
+    margin-top: 10px
+}
+
+.c3_t li {
+    width: 86px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: white;
+    margin-left: 10px
+}
+.c3_t li.hover {
+    background-color: #1b6dc0;
+}
+
+.c3_t li.hover a {
+    color: #FFFFFF;
+}
+.c3_t li.part6{}
+.c3_t li.part6 a:hover{color: #FFFFFF;}
+.c3_c {
+    padding: 10px;
+}
+
+.c3_c_l {
+    float: left;
+    width: 260px;
+    height: 260px;
+}
+
+.c3_c_l img {
+    vertical-align: middle;
+    width: 260px;
+    height: 260px
+}
+
+.c3_l1 {
+    background: url('../../images/zjyx/c3_1.jpg') center no-repeat;
+}
+
+.c3_l2 {
+    background: url('../../images/zjyx/c3_2.jpg') center no-repeat;
+}
+
+.c3_l3 {
+    background: url('../../images/zjyx/c3_3.jpg') center no-repeat;
+}
+
+.c3_l4 {
+    background: url('../../images/zjyx/c3_4.jpg') center no-repeat;
+}
+
+.c3_l5 {
+    background: url('../../images/zjyx/c3_5.jpg') center no-repeat;
+}
+.c3_l6 {
+    background: url('../../images/zjyx/c3_6.jpg') center no-repeat;
+}
+
+.c3_c_r {
+    float: left;
+    width: 766px;
+    height: 163px;
+    background-color: white;
+    line-height: 28px;
+    text-indent: 28px;
+    padding: 10px;
+    margin-top: 10px
+}
+.c3_c_r_ul{padding:0 20px;}
+.c3_c_r_ul li{ width: 360px; line-height:28px; text-indent:15px; text-align: left; float: left; background:url(/images/index/menu-ico.png) left center no-repeat;}
+
+.c4 {
+    width: 1100px;
+    height: 360px;
+    margin: 15px auto;
+}
+
+.c4_t {
+    width: 1100px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 28px
+}
+
+.c4_c {
+    margin-top: 10px
+}
+
+.c4_c_l {
+    width: 528px;
+    height: 313px;
+    float: left;
+    background: url("../../images/zjyx/mapBg.png") 70px no-repeat #024478;
+    /*background-size: 350px;*/
+    position: relative;
+    border: 1px #eee solid;
+}
+
+.c4_c_l h1 {
+    width: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 30px 0 0 20px;
+}
+
+.legend {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.legend .county, .legend .country {
+    display: block;
+    color: #fff;
+    /*height: 20px;*/
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.legend i {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.county i {
+    background: url("../../images/zjyx/city.png") center no-repeat;
+}
+
+.country i {
+    background: url("../../images/zjyx/country.png") center no-repeat;
+}
+
+.c4_c_l li {
+    position: absolute;
+    line-height: 15px;
+    padding: 0 10px;
+    height: 17px;
+    cursor: pointer;
+    font-size: 10px;
+    background: url("../../images/zjyx/country.png") center bottom no-repeat;
+    transition: background .3s; /* 制造上浮感 */
+}
+
+.c4_c_l li.hover {
+    background: url("../../images/zjyx/mark.png") center top no-repeat;
+    /*padding: 0 30px;*/
+    /*padding-top: 100px;*/
+    margin-top: -5px; /* 位置上移5px,精确位置,制造上浮感*/
+}
+
+.c4_c_l li span {
+    display: none;
+}
+
+.c4_c_l .county_city {
+    padding: 0 8px;
+    top: 213px;
+    left: 210px;
+    background: url("../../images/zjyx/city.png") center no-repeat;
+    color: #fff;
+}
+
+.help {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    color: #fff;
+}
+
+.c4_c_l .c4_map1 {
+    top: 43px;
+    left: 220px;
+    display: none;
+}
+
+.c4_c_l .c4_map2 {
+    top: 60px;
+    left: 240px;
+    display: none;
+}
+
+.c4_c_l .c4_map3 {
+    top: 222px;
+    left: 257px;
+}
+
+.c4_c_l .c4_map4 {
+    top: 235px;
+    left: 180px;
+}
+
+.c4_c_l .c4_map5 {
+    top: 210px;
+    left: 180px;
+}
+
+.c4_c_l .c4_map6 {
+    top: 143px;
+    left: 265px;
+    display: none;
+}
+
+.c4_c_l .c4_map7 {
+    top: 232px;
+    left: 200px;
+}
+
+.c4_c_l .c4_map8 {
+    top: 192px;
+    left: 325px;
+}
+
+.c4_c_l .c4_map9 {
+    top: 70px;
+    left: 220px;
+}
+
+/*.c4_c_l .c4_map9.hover i {*/
+/*display: block;*/
+/*position: absolute;*/
+/*background: #c00;*/
+/*border-radius: 50%;*/
+/*animation-name: redCircle;*/
+/*animation-duration: 2s;*/
+/*animation-timing-function: ease-in-out;*/
+/*animation-iteration-count: infinite;*/
+/*}*/
+
+.c4_c_l .c4_map10 {
+    top: 226px;
+    left: 200px;
+    display: none;
+}
+
+.c4_c_l .c4_map11 {
+    top: 257px;
+    left: 160px;
+    display: none;
+}
+
+.c4_c_l .c4_map12 {
+    top: 230px;
+    left: 240px;
+}
+
+.c4_c_l .c4_map13 {
+    top: 175px;
+    left: 175px;
+    display: none;
+}
+
+.c4_c_l .c4_map14 {
+    top: 132px;
+    left: 275px;
+}
+
+.c4_c_l .c4_map15 {
+    top: 185px;
+    left: 230px;
+}
+
+.c4_c_l .c4_map16 {
+    top: 232px;
+    left: 328px;
+}
+
+.c4_c_l .c4_map17 {
+    top: 260px;
+    left: 280px;
+}
+
+.c4_c_r {
+    width: 520px;
+    height: 273px;
+    float: left;
+    margin-right: 10px;
+    line-height: 28px;
+    padding: 0 20px 20px 20px;
+    overflow: hidden;
+}
+
+.c4_c_r h2 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 1px;
+    background: url("../../images/zjyx/general.png") 0 center no-repeat;
+    padding-left: 35px;
+}
+
+.c4_c_r p {
+    text-indent: 2em;
+    overflow: hidden;
+    height: 263px;
+}
+
+.c4_c_r a:hover {
+    text-decoration: underline;
+    color: #a00;
+}
+
+/*红点动画*/
+@keyframes redCircle  {
+    0%{
+        width: 0;
+        height: 0;
+        opacity: 1;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    100%{
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        margin-top: -8px;
+        margin-left: -8px;
+    }
+}
