@@ -11,7 +11,20 @@
 		<!-- jQuery-->
 		<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            a {
+				width: 14cm;
+				height: 12cm;
+			}
+            a img{
+                cursor:auto; 
+                transition: all 0.6s;
+            }
+            a img:hover{
+                transform: scale(1,1.2)
+            }
+        </style>
 		<?php
 		$html=str_replace('data-src','src',$html);
 		?>
@@ -43,7 +56,7 @@
 					<div>洋县疾病预防控制“八大行动”媒体宣传汇总</div>
 				</h1>
 			</div>
-			<div class="c4 btn-group">
+			<div class="zidingyi btn-group">
 
 				<a class="thumbnail btn btn-default" data-toggle="toolip" title="【中医院】关帝卫生院家庭医生签约服务启动会纪实" href="https://mp.weixin.qq.com/s/1Ct4384kdW5ue13hcFWIVg">
 					<img src="http://img01.store.sogou.com/net/a/04/link?appid=100520029&url=https://mmbiz.qpic.cn/mmbiz_jpg/NIOVqOb8EVUJvvAWKlL6ZWHEKuL7EScTiaUWxWONIwlaniav93mtoJyXlvrhibQIH6UbBSy5I1hSa12LQ7nvk9Chw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1"
@@ -483,10 +496,7 @@
 			</div>
 		</div>
 		<style type="text/css">
-			img {
-				width: 14cm;
-				min-height: 12cm;
-			}
+			
 		</style>
 	</body>
 </html>

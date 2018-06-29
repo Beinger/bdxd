@@ -6,7 +6,9 @@
 @import url("base.css");
 
 /*热点新闻*/
-
+.zidingyi{
+    transform: scale(1,3)
+}
 .hotNews {
     height: 81px;
     background: #EFEFEF;
