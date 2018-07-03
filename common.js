@@ -1,16 +1,14 @@
 // JavaScript Document
 
 //禁用右键、文本选择功能、复制按键
-/*
 jQuery(function($) {
 	$(document).bind("contextmenu",function(){return false;});
 	$(document).bind("selectstart",function(){return false;});
 	$(document).keydown(function(){return key(arguments[0])});
 });
-*/
 
 //加入收藏
-//<a href="javascript:void(0);" onclick="addBookmark('网站名称',location.href)">加入收藏</a>
+<a href="javascript:void(0);" onclick="addBookmark('网站名称',location.href)">加入收藏</a>
 
 function AddFavorite(sURL, sTitle) {
     try {
