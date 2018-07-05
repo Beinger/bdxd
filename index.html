@@ -1,9 +1,9 @@
-<COPTYPE html>
+<!DOCTYPE html>
 
 	<head>
 		<meta charset='utf-8'>
 		<link rel="stylesheet" href="zjyx.css">
-		<script src="jquery.js"></script>
+		<!-- <script src="jquery.js"></script> -->
 		<script src="common.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0,viewport-fit=cover">
 		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
@@ -34,7 +34,34 @@
 			h1 {
 				text-align: center;
 			}
+
+			a.backtop {
+                background: no-repeat scroll center center rgba(80, 100, 0, 50);
+                bottom: 20px;
+                cursor: pointer;
+                display: none;
+                height: 70px;
+                position: fixed;
+                right: 20px;
+                text-indent: -9999px;
+                width: 70px;
+                z-index: 100;
+            }
         </style>
+		<!-- <script>
+			$(window).scroll(function(){
+			    if($(window).scrollTop()>=100){
+				    $(".backtop").fadeIn();
+				}else{
+					$(".backtop").fadeOut();
+				}
+			});
+
+			$(".backtop").click(function(event){
+				$("html,body").animate({scrollTop:0}, 500);
+				return false;
+			});
+		</script> -->
 		<?php
 		$html=str_replace('data-src','src',$html);
 		?>
@@ -43,12 +70,27 @@
 	<body>
 
 		<div class="c4 panel container">
-			<div class="c4_t bg_color">
+			<div class="c4_t">
 				<span class="a_w_w">
 					<a style="width: 20%; height: 100%;" href="http://www.yangxian.gov.cn/" target="_blank">洋县人民政府网链接</a>
 				</span>
 				<span class="a_w_w">
 					<a style="width: 20%; height: 100%;" href="files.html" target="_blank">洋县疾病控制健康联合体文件</a>
+				</span>
+				<span class="dropdown">
+					<button class="btn dropdown-toggle" id="dropdownMenu1"
+					data-toggle="dropdown">
+						中国疾控动态
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li role="presentation">
+							<a target="_blank" style="width: 100%; height: 100%;" href="https://mp.weixin.qq.com/s/Je-Si__GPYMB80L7KWCquw" role="menuitem" tabindex="-1">
+								公共泳池练游泳？请你记住这四条！
+							</a>
+						</li>
+						<li role="presentation"></li>
+					</ul>
 				</span>
 			</div>
 			<div class="c4_c">
@@ -59,7 +101,7 @@
 					<param name="quality" value="high">
 					<param name="wmode" value="Opaque" />
 					<embed src="zjyx.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"
-					 width="1100" height="312"></embed>
+					 width="100%" height="312"></embed>
 				</object>
 				<!-- ---- 管理员管理标签>>走进洋县>>--【flash电子地图】 -- 标签结束 ---- -->
 			</div>
@@ -82,16 +124,27 @@
 								</li>
 								<li data-slide-to="3" data-target="#carousel-1">
 								</li>
+								<li data-slide-to="4" data-target="#carousel-1">
+								</li>
 							</ol>
 							<div class="carousel-inner">
+
 								<div class="item active" style="width: 100%; height: 15cm;">
-									<img style="width:100%; height:auto;" alt="" src="http://auto.chinanews.com/cr/2014/1018/1138939288.jpg" />
-										<div class="carousel-caption">
-											<h4>
-												习近平总书记对扶贫的牵挂
-											</h4>										
-										</div>
+									<img style="width:100%; height:auto;" alt="" src="http://img01.store.sogou.com/net/a/04/link?appid=100520029&url=https://mmbiz.qpic.cn/mmbiz_png/jw19BU6dpboBzZ8ZXX25hFkLTp7oj0tG8oAUNxrCic3UicI7LLvMKjqAGnOIHQtOLicYFtKCY5f92icJALmogeVcLA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1" />
+									<div class="carousel-caption">
+										<h4>
+											健康扶贫“汉中模式”主题内涵
+										</h4>										
 									</div>
+								</div>
+								<div class="item" style="width: 100%; height: 15cm;">
+									<img style="width:100%; height:auto;" alt="" src="http://auto.chinanews.com/cr/2014/1018/1138939288.jpg" />
+									<div class="carousel-caption">
+										<h4>
+											习近平总书记对扶贫的牵挂
+										</h4>										
+									</div>
+								</div>
 								<div class="item" style="width: 100%; height: 15cm;">
 									<img style="width:100%; height:auto;" alt="" src="http://www.yangxian.gov.cn/wcm.files/upload/CMSyx/201704/201704130927055.jpg" />
 									<div class="carousel-caption">
@@ -596,6 +649,9 @@
 					alt="图片无法预览,请点击这里查看">
 				</a>
 			</div>
+			<a class="backtop">
+				<h6>返回顶部</h6>
+			</a>
 			<div class="footer">
 				<div class="copyright">
 					&copy;洋县疾病控制健康联合体理事会办公室</div>
