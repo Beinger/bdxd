@@ -35,19 +35,19 @@
 
 /* for IE9+ and other browsers */
 .a_r_r {
-
 }
 
 .a_r_r a {
-    color: #aa0000
+    background-color: gray;
+    color: orange;
 }
 
 .a_r_r a:hover {
-    color: #ff0000
+    color: #14e; 
 }
 
 .a_w_w a {
-    color: #FFFFFF;
+    color: white;
     background: #1b6dc0;
     padding: 10px 20px;
 }
