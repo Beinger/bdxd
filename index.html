@@ -14,28 +14,28 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
         a {
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
             width: 33%;
             height: 5cm;
             margin: 4px;
             overflow: hidden;
-            border-radius:5%;
+            border-radius: 5%;
         }
 
-        span a{
+        span a {
             width: auto;
             height: auto;
         }
 
-        a img{
+        a img {
 
             cursor: pointer;
             transition: all 0.6s;
-            
+
         }
 
-        a img:hover{
-            transform:scale(1.2);
+        a img:hover {
+            transform: scale(1.2);
             /* transform:rotateX('90') */
         }
 
@@ -43,8 +43,8 @@
             text-align: center;
         }
 
-        a.backtop {
-            background: no-repeat scroll center center rgba(80, 100, 0, 50);
+        .backtop {
+            background-image: url(images/toTop.png);
             bottom: 20px;
             cursor: pointer;
             display: none;
@@ -52,28 +52,31 @@
             position: fixed;
             right: 20px;
             text-indent: -9999px;
-            width: 70px;
+            width: 55px;
             z-index: 100;
         }
     </style>
-    <!-- <script>
-        $(window).scroll(function(){
-            if($(window).scrollTop()>=100){
-                $(".backtop").fadeIn();
-            }else{
-                $(".backtop").fadeOut();
-            }
-        });
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 100) {
+                    $(".backtop").fadeIn();
+                } else {
+                    $(".backtop").fadeOut();
+                }
+            })
 
-$(".backtop").click(function(event){
-    $("html,body").animate({scrollTop:0}, 500);
-    return false;
-});
-    </script> -->
+
+            $(".backtop").click(function (event) {
+                $("html,body").animate({ scrollTop: 0 }, 500);
+                return false;
+            })
+        })
+    </script>
     <?php
     $html=str_replace('data-src','src',$html);
     ?>
-</head>
+    </head>
 
 <body>
 
