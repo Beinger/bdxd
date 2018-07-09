@@ -19,6 +19,7 @@
             height: 5cm;
             margin: 4px;
             overflow: hidden;
+            border-radius:5%;
         }
 
         span a{
@@ -30,7 +31,7 @@
 
             cursor: pointer;
             transition: all 0.6s;
-            /* border-radius:5%; */
+            
         }
 
         a img:hover{
@@ -79,14 +80,13 @@ $(".backtop").click(function(event){
     <div class="c4 panel container">
         <div class="c4_t">
             <span class="a_r_r">
-                <a class="btn" style="width: 20%; height: 100%;" href="http://www.yangxian.gov.cn/" target="_blank">洋县人民政府网链接</a>
+                <a class="btn" href="http://www.yangxian.gov.cn/" target="_blank">洋县人民政府网链接</a>
             </span>
             <span class="a_r_r">
                 <a class="btn" href="files.html" target="_blank">洋县疾病控制健康联合体文件</a>
             </span>
             <span class="a_r_r dropdown">
-                <a class="btn dropdown-toggle" id="dropdownMenu1"
-                    data-toggle="dropdown">
+                <a class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
                     中国疾控动态
                     <span class="caret"></span>
                 </a>
@@ -110,10 +110,10 @@ $(".backtop").click(function(event){
                         <a target="_blank" style="width: 100%; height: 100%;" href="files/“健康中国2030”规划纲要.html" role="menuitem" tabindex="-1">
                             “健康中国2030”规划纲要
                         </a>
-                        <a target="_blank" style="width: 100%; height: 100%;" href="files/中国防治慢性病中长期规划（2017-2025）.mht" role="menuitem" tabindex="-1">
+                        <a target="_blank" style="width: 100%; height: 100%;" href="files/中国防治慢性病中长期规划（2017-2025）.html" role="menuitem" tabindex="-1">
                             中国防治慢性病中长期规划（2017-2025）
                         </a>
-                        <a target="_blank" style="width: 100%; height: 100%;" href="files/中国公民健康素养66条.doc" role="menuitem" tabindex="-1">
+                        <a target="_blank" style="width: 100%; height: 100%;" href="files/中国公民健康素养66条.html" role="menuitem" tabindex="-1">
                             中国公民健康素养66条
                         </a>
                     </li>
@@ -677,6 +677,7 @@ $(".backtop").click(function(event){
                 </a>
             </div>
             <a class="backtop">
+                <img src="images/toTop.png" alt="to top">
                 <h6>返回顶部</h6>
             </a>
             <div class="footer">
