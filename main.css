@@ -7,20 +7,12 @@
     line-height: 30px;
     border-top: 4px #0145B4 solid;
 }
+
 .footer_tb{ width:400px; height:80px; margin: 0 auto;}
 .footer_tb p{ width:120px; height:80px; float:left;}
 .footer_tb p img{text-align:center;}
-.gov_logo {
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    background: url("../../images/base/govLogo.png") center no-repeat;
-}
 
-
-a.thumbnail {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+.thumbnail {
     width: 33%;
     height: 5cm;
     margin: 4px;
@@ -29,9 +21,11 @@ a.thumbnail {
 }
 
 a {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     background: darkcyan;
     width: auto;
     height: auto;
+    margin: 3px;
 }
 
 a img {
@@ -74,3 +68,6 @@ h1 {
     text-shadow: 0ch 1px 3px black;
 }
  
+.bg_color{
+    background-image: url(zhuhuan.png)
+}
