@@ -35,9 +35,22 @@ a img {
 
 }
 
-a img:hover {
-    transform: scale(1.2);
+a:hover {
+    /* transform: scale(1.2); */
     /* transform:rotateX('90') */
+    animation-name: range_size;
+    animation-duration: 2s;
+}
+@keyframes range_size{
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.0);   
+    }
+    75%{
+        transform: scale(1.5);
+    }
 }
 
 h1 {
@@ -70,4 +83,24 @@ h1 {
  
 .bg_color{
     background-image: url(zhuhuan.png)
+}
+
+.rainbow{
+    animation-name: rainbow_color;
+    animation-duration: 3s;
+}
+
+@keyframes rainbow_color{
+    0%{
+        background-color: lightblue;
+        color: yellow;
+    }
+    50%{
+        background-color: lightgreen;
+        color: blue;
+    }
+    100%{
+        background-color: lightgrey;
+        columns: red;
+    }
 }
