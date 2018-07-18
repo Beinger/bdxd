@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" \>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="jiSuanQi.js"></script>
+    <link rel="stylesheet" href="jiSuanQi.css">
     <title>水质检测计算器</title>
 </head>
 <body>
@@ -22,15 +23,24 @@
                     <h3 class="modal-title" id="myModalLabel">标准曲线、回归公式、浓度计算</h3>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-ls-12">
-                            <label for="">项目名称</label>
-                            <input type="text" id="proName" placeholder="项目名称" class="btn btn-defalut">
-                            <label for="">加样量(ml)</label>
-                            <input type="number" name="v" id="jiaYangLing" placeholder="加样量"class="btn btn-default">
+                    <div class="row form">
+                        <div class="btn-group">
+                            <label for="proName">项目名称
+                            <input type="text" id="proName" placeholder="例如：硫酸盐" class="btn btn-defalut"></label>
+                            <label for="jiaYangLing">加样量(ml)
+                            <input value="50" type="number" name="v" id="jiaYangLing" placeholder="加样量"class="btn btn-default"></label>
+                            <label for="y1">y1 = <input class="btn btn-default" type="number" id="y1" value="0.001"></label>
+                            <label for="y2">y2 = <input class="btn btn-default" type="number" id="y2" value="0.002"></label>
+                            <label for="y3">y3 = <input class="btn btn-default" type="number" id="y3" value="0.003"></label>
+                            <label for="y4">y4 = <input class="btn btn-default" type="number" id="y4" value="0.004"></label>
+                            <label for="y5">y5 = <input class="btn btn-default" type="number" id="y5" value="0.005"></label>
+                            <label for="y6">y6 = <input class="btn btn-default" type="number" id="y6" value="0.006"></label>
+                            <label for="y7">y7 = <input class="btn btn-default" type="number" id="y7" value="0.007"></label>
+                            <label for="y8">y8 = <input class="btn btn-default" type="number" id="y8" value="0.008"></label>
                         </div>
+                        <div class="col-lg-7 col-md-12" id="container"></div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-lg-5">
                             <table class="table">
                                 <tr>
@@ -39,42 +49,42 @@
                                 </tr>
                                 <tr>
                                     <td>x1</td>
-                                    <td><input type="number" id="y1"></td>
+                                      <td><input value="0.001" type="number" id="y1"></td>
                                 </tr>
                                 <tr>
                                     <td>x2</td>
-                                    <td><input type="number" id="y2"></td>
+                                      <td><input value="0.002" type="number" id="y2"></td>
                                 </tr>
                                 <tr>
                                     <td>x3</td>
-                                    <td><input type="number" id="y3"></td>
+                                      <td><input value="0.003" type="number" id="y3"></td>
                                 </tr>
                                 <tr>
                                     <td>x4</td>
-                                    <td><input type="number" id="y4"></td>
+                                      <td><input value="0.004" type="number" id="y4"></td>
                                 </tr>
                                 <tr>
                                     <td>x5</td>
-                                    <td><input type="number" id="y5"></td>
+                                      <td><input value="0.005" type="number" id="y5"></td>
                                 </tr>
                                 <tr>
                                     <td>x6</td>
-                                    <td><input type="number" id="y6"></td>
+                                      <td><input value="0.006" type="number" id="y6"></td>
                                 </tr>
                                 <tr>
                                     <td>x7</td>
-                                    <td><input type="number" id="y7"></td>
+                                      <td><input value="0.007" type="number" id="y7"></td>
                                 </tr>
                                 <tr>
                                     <td>x8</td>
-                                    <td><input type="number" id="y8"></td>
+                                      <td><input value="0.008" type="number" id="y8"></td>
                                 </tr>
                             </table>
                         </div>
                         <div class="col-lg-7">
                             <div id="container"></div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
                 <div class="modal-footer">

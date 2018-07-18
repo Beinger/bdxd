@@ -1,44 +1,51 @@
-var y1 = document.ElementById("y1").value();
-var y2 = document.ElementById("y2").value();
-var y3 = document.ElementById("y3").value();
-var y4 = document.ElementById("y4").value();
-var y5 = document.ElementById("y5").value();
-var y6 = document.ElementById("y6").value();
-var y7 = document.ElementById("y7").value();
-var y8 = document.ElementById("y8").value();
 
-Highcharts.chart('container',{
-    title:{
+
+$(document).ready(function(){
+    var y01 = $("#y1").val();
+    var y02 = $("#y2").val();
+    var y03 = $("#y3").val();
+    var y04 = $("#y4").val();
+    var y05 = $("#y5").val();
+    var y06 = $("#y6").val();
+    var y07 = $("#y7").val();
+    var y08 = $("#y8").val();
+    var title = {
         text:'标准曲线'
-    },
-    subtitle:{
-        text: fe
-    },
-    yAxis: {
+    };
+    var subtitle={
+        text: "fe"
+    };
+    var yAxis= {
         title:{
             text:"吸光度"
         }
-    },
-    legend:{
+    };
+    var legend={
         layout:"vertical",
         align: "right",
         verticalAlign: "middle"
-    },
-    plotOptions:{
+    };
+    var plotOptions={
         series:{
             label:{
-                connectorAllowed: false
+                connectorAllowed: false 
             },
-            pointStart: 2018
+            pointStart: 0
         }
-    },
-    series:[{
+    };
+    var series=[{
         name: "铁",
+        // val:[
+        //     0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9
+        // ],
+        // data:[
+        //     y01,y02,y03,y04,y05,y06,y07,y08
+        // ],
         data:[
-            y1,y2,y3,y4,y5,y6,y7,y8
+            $("#y1").val(),$("#y2").val(),$("#y1").val(),$("#y2").val(),$("#y1").val(),$("#y2").val(),$("#y1").val(),$("#y2").val(),
         ]
-    }],
-    responsive:{
+    }];
+    var responsive={
         rules:[{
             condition:{
                 maxWidth: 500
@@ -51,5 +58,15 @@ Highcharts.chart('container',{
                 }
             }
         }]
-    }
+    };
+    var json={};
+    json.title = title;
+    json.subtitle = subtitle;
+    // json.xAxis = xAxis;
+    json.yAxis = yAxis;
+    json.legend = legend;
+    json.series = series;
+    json.responsive = responsive;
+    json.plotOptions = plotOptions;
+    $("#container").highcharts(json);
 });
