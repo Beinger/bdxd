@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<fe>
+    <id1>
+        <tiji>0</tiji>
+        <xgd>0.001</xgd>
+    </id1>
+    <id2>
+        <tiji>0</tiji>
+        <xgd>0.003</xgd>
+    </id2>
+    <id3>
+        <tiji>0</tiji>
+        <xgd>0.006</xgd>
+    </id3>
+    <id4>
+        <tiji>0</tiji>
+        <xgd>0.011</xgd>
+    </id4>
+    <id5>
+        <tiji>0</tiji>
+        <xgd>0.018</xgd>
+    </id5>
+    <id6>
+        <tiji>0</tiji>
+        <xgd>0.021</xgd>
+    </id6>
+    <id7>
+        <tiji>0</tiji>
+        <xgd>0.041</xgd>
+    </id7>
+</fe>
+
+<so4>
+    <id1>
+        <tiji>0</tiji>
+        <xgd>0.001</xgd>
+    </id1>
+    <id2>
+        <tiji>0</tiji>
+        <xgd>0.003</xgd>
+    </id2>
+    <id3>
+        <tiji>0</tiji>
+        <xgd>0.006</xgd>
+    </id3>
+    <id4>
+        <tiji>0</tiji>
+        <xgd>0.011</xgd>
+    </id4>
+    <id5>
+        <tiji>0</tiji>
+        <xgd>0.018</xgd>
+    </id5>
+    <id6>
+        <tiji>0</tiji>
+        <xgd>0.021</xgd>
+    </id6>
+    <id7>
+        <tiji>0</tiji>
+        <xgd>0.041</xgd>
+</so4>

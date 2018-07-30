@@ -1,3 +1,4 @@
+var data_list = [];
 $(document).ready(function(){
     var y01 = $("#y1").val();
     var y02 = $("#y2").val();
@@ -9,7 +10,6 @@ $(document).ready(function(){
     var y08 = $("#y8").val();
     data_list = [y01,y02,y03,y04,y05,y06,y07,y08];
 });
-alert(data_list); 
 var chart = Highcharts.chart("container",{
 
     title:{
