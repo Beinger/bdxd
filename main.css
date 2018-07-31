@@ -15,7 +15,7 @@
 .thumbnail {
     width: 33%;
     height: 5cm;
-    margin: 4px;
+    margin: 0;
     overflow: hidden;
     border-radius: 5%;
 }
@@ -32,7 +32,7 @@
 a {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     background: darkcyan;
-    margin: 3px;
+    margin: 0px;
 }
 .block_line{
     width: 100%;
