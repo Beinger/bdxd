@@ -1,38 +1,35 @@
-var data_list = [];
-function loadXMLDoc() {
+var app = new Vue({
+    el: '#app',
+    data: {
+        nd: "10",
+        x1: "0",
+        x2: "1",
+        x3: "2",
+        x4: "3",
+        x5: "4",
+        x6: "6",
+        x7: "7",
+        x8: "8",
 
-    var xmlhttp;
-    var txt, x, i;
-    xmlhttp = new XMLHttpRequest();
-
-    xmlDoc = xmlhttp.responseXML;
-    txt = "";
-    x = xmlDoc.getElementsByTagName("XGD");
-    for (i = 0; i < x.length; i++) {
-        txt = txt + x[i].childNodes[0].nodeValue + "<br>";
+        y1: '0.001',
+        y2: "0.002",
+        y3: "0.003",
+        y4: '0.004',
+        y5: '0.005',
+        y6: '0.006',
+        y7: '0.007',
+        y8: '0.008',
     }
-    xmlhttp.open("GET", "./ajax/biaoZhun.xml", true);
-    xmlhttp.send();
-
-}
-// document.getElementById("y1").innerHTML = txt;
-// document.getElementById("y2").innerHTML = txt;
-// document.getElementById("y3").innerHTML = txt;
-// document.getElementById("y4").innerHTML = txt;
-// document.getElementById("y5").innerHTML = txt;
-// document.getElementById("y6").innerHTML = txt;
-// document.getElementById("y7").innerHTML = txt;
-$(document).ready(function () {
-    var y01 = $("#y1").val();
-    var y02 = $("#y2").val();
-    var y03 = $("#y3").val();
-    var y04 = $("#y4").val();
-    var y05 = $("#y5").val();
-    var y06 = $("#y6").val();
-    var y07 = $("#y7").val();
-    var y08 = $("#y8").val();
-    data_list = [y01, y02, y03, y04, y05, y06, y07, y08];
-});
+}) 
+// var data_list = [app.y1, app.y2, app.y3, app.y4, app.y5, app.y6, app.y7, app.y8];
+var y1 = parseFloat(app.y1);
+var y2 = parseFloat(app.y2);
+var y3 = parseFloat(app.y3);
+var y4 = parseFloat(app.y4);
+var y5 = parseFloat(app.y5);
+var y6 = parseFloat(app.y6);
+var y7 = parseFloat(app.y7);
+var y8 = parseFloat(app.y8);
 var chart = Highcharts.chart("container", {
 
     title: {
@@ -61,7 +58,7 @@ var chart = Highcharts.chart("container", {
     },
     series: [{
         name: "Fe",
-        data: data_list
+        data: [y1, y2, y3, y4, y5, y6, y7, y8] 
     }],
     responsive: {
         rules: [{
@@ -78,64 +75,3 @@ var chart = Highcharts.chart("container", {
         }]
     }
 });
-
-//    alert(data_list);
-//     var title = {
-//         text:'标准曲线'
-//     };
-//     var subtitle={
-//         text: "fe"
-//     };
-//     var yAxis= {
-//         title:{
-//             text:"吸光度"
-//         }
-//     };
-//     var legend={
-//         layout:"vertical",
-//         align: "right",
-//         verticalAlign: "middle"
-//     };
-//     var plotOptions={
-//         series:{
-//             label:{
-//                 connectorAllowed: false 
-//             },
-//             pointStart: 0
-//         }
-//     };
-//     var series=[{
-//         name: "铁",
-//         // val:[
-//         //     0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9
-//         // ],
-//         // data:[
-//         //     y01,y02,y03,y04,y05,y06,y07,y08
-//         // ],
-//         data: data_list
-//     }];
-//     var responsive={
-//         rules:[{
-//             condition:{
-//                 maxWidth: 500
-//             },
-//             chartOptions:{
-//                 legend:{
-//                     layout:"horizontal",
-//                     align:"center",
-//                     verticalAlign:"bottom"
-//                 }
-//             }
-//         }]
-//     };
-//     var json={};
-//     json.title = title;
-//     json.subtitle = subtitle;
-//     // json.xAxis = xAxis;
-//     json.yAxis = yAxis;
-//     json.legend = legend;
-//     json.series = series;
-//     json.responsive = responsive;
-//     json.plotOptions = plotOptions;
-//     $("#container").highcharts(json);
-// });
