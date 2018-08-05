@@ -43,7 +43,7 @@ var app = new Vue({
             return this.y_ - this.b * this.x_ * this.x_
         },
         r_1: function(){
-            return ((this.x1 - this.x_) * (this.y1 - this.y_) + (this.x2 * this.x_) * (this.y2 - this.y_) + (this.x3 - this.x_) * (this.y3 - this.y_) + (this.x4 - this.x_) * (this.y4 - this.y_) + (this.x5 - this.x_) * (this.y5 - this.y_) + (this.x6 - this.x_) * (this.y6 - this.y_) + (this.x7 - this.x_) * (this.y7 - this.y_) + (this.x8 - this.x_) * (this.y8 - this.y_))
+            return (this.x1 - this.x_) * (this.y1 - this.y_) + (this.x2 * this.x_) * (this.y2 - this.y_) + (this.x3 - this.x_) * (this.y3 - this.y_) + (this.x4 - this.x_) * (this.y4 - this.y_) + (this.x5 - this.x_) * (this.y5 - this.y_) + (this.x6 - this.x_) * (this.y6 - this.y_) + (this.x7 - this.x_) * (this.y7 - this.y_) + (this.x8 - this.x_) * (this.y8 - this.y_)
         },
         r_21: function(){
             return (this.y1 - this.y_) * (this.y1 - this.y_) + (this.y2 - this.y_) * (this.y2 - this.y_) + (this.y3 - this.y_) * (this.y3 - this.y_) + (this.y4 - this.y_) * (this.y4 - this.y_) + (this.y5 - this.y_) * (this.y5 - this.y_) + (this.y6 - this.y_) * (this.y6 - this.y_) + (this.y7 - this.y_) * (this.y7 - this.y_) + (this.y8 - this.y_) * (this.y8 - this.y_)
@@ -52,7 +52,7 @@ var app = new Vue({
             return (this.x1 - this.x_) * (this.x1 - this.x_) + (this.x2 - this.x_) * (this.x2 - this.x_) + (this.x3 - this.x_) * (this.x3 - this.x_) + (this.x4 - this.x_) * (this.x4 - this.x_) + (this.x5 - this.x_) * (this.x5 - this.x_) + (this.x6 - this.x_) * (this.x6 - this.x_) + (this.x7 - this.x_) * (this.x7 - this.x_) + (this.x8 - this.x_) * (this.x8 - this.x_)
         },
         r_2: function(){
-            return Math.sqrt(this.r_21) * Math.sqrt(this.r_22)
+            return Math.sqrt((this.r_21) * (this.r_22))
         },
         r: function(){
             return this.r_1 / this.r_2
