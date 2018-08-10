@@ -1,1 +1,2 @@
-print("Hello Lua!")
+local welcome = 'Hello World'
+ngx.say(welcome)
